@@ -8,6 +8,8 @@ A lightweight JavaScript function for conditional joining classNames together it
 
 [![MIT License](https://img.shields.io/badge/License-MIT-green.svg)](https://choosealicense.com/licenses/mit/)
 
+[![Coverage Status](https://coveralls.io/repos/github/bahaa95/classname/badge.svg?branch=main)](https://coveralls.io/github/bahaa95/classname?branch=main)
+
 
 ## Installation
 
