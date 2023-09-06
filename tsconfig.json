@@ -4,8 +4,12 @@
     "lib": ["es2015"],
     "moduleResolution": "node",
     "strict": true,
-    "noEmit": true,
-    "outDir": "./dist"
+    "noEmit": false,
+    "outDir": "./dist",
+    "skipLibCheck": true,
+    "baseUrl": "src",
+    "declaration": true
+    
   },
   "include": ["src"],
   "exclude": ["node_modules", "**/__tests__/*"]
