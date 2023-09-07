@@ -1,7 +1,7 @@
 
 # @bahaa95/classname
 
-A lightweight JavaScript function for conditional joining classNames together it also work with deeply nested objects and array to improve readability and grouping.
+A lightweight JavaScript function for conditional joining classNames together, it also work with deeply nested objects and array to improve readability and grouping.
 
 
 
