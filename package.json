@@ -8,7 +8,7 @@
     "dist"
   ],
   "publishConfig": {
-    "registry": "https://npm.pkg.github.com/bahaa95"
+    "access": "public"
   },
   "author": "Bahaa Adel (https://bahaa-adel.vercel.app)",
   "repository": {
