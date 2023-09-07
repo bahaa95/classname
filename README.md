@@ -1,7 +1,7 @@
 
 # @bahaa95/classname
 
-A lightweight JavaScript function for conditional joining classNames together it also work with nested objects and array to improve readability and grouping.
+A lightweight JavaScript function for conditional joining classNames together it also work with deeply nested objects and array to improve readability and grouping.
 
 
 
@@ -30,20 +30,22 @@ import { classname } from '@bahaa95/classname';
 
 const isDisabled = false;
 const isLoading = true;
+const theme = "light"
 
 const classnames = classname(
     "primary",
     null,
     " ",
     false && "border-blue",
-    [true && "text-l"],
+    [true && "text-l", {'text-white': theme === 'dark'}],
     {
       row:true,
-      disabled: isDisabled || isLoading;
+      disabled: isDisabled || isLoading,
+      display:["flex","row","items-center"],
     }
 );
 
-console.log(classnames); //=> "primary text-l row disabled"
+console.log(classnames); //=> "primary text-l row disabled flex row items-center"
 
 ```
 ### Realtime Example
@@ -57,7 +59,7 @@ function App() {
     <div className="App">
       <input
         className={cx({
-          cursur:true,
+          pointer:true,
          //when a property has a value type of array or object the property name     
          //will not included in the result classes. it will use property name for 
          //grouping only in our case (text, active, display) properties below will not 
